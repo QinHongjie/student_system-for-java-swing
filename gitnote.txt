@@ -13,3 +13,6 @@ git diff HEAD -- readme.txt命令可以查看工作区和版本库里面最新�
 创建源origin错误：git remote rm origin
 
 远程库已经准备，克隆一个本地库：git clone git@github.com:michaelliao/gitskills.git
+
+查看合并分支情况：git log --graph --pretty=oneline --abbrev-commit
+查看分支合并图：git log --graph
