@@ -1,9 +1,9 @@
 package sms.jdbc;
 
+import com.mysql.jdbc.Connection;
 import sms.utils.JDBCUtils;
 import sms.utils.Student;
 
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;

@@ -1,13 +1,16 @@
 package sms.utils;
 
 import com.mysql.jdbc.Connection;
+
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * jdbc工具类
  */
 public class JDBCUtils {
+
 	//加载驱动，并建立数据库连接
 	public static Connection getConnection() throws SQLException,ClassNotFoundException{
 		Class.forName("com.mysql.jdbc.Driver");
@@ -17,8 +20,9 @@ public class JDBCUtils {
 		Connection conn = (Connection) DriverManager.getConnection(url, user, password);
 		return conn;
 	}
+
 	//关闭数据库连接，释放资源
-	public static void release(java.sql.Statement stmt,java.sql.Connection conn) {
+	public static void release(Statement stmt, Connection conn) {
 		if(stmt != null) {
 			try {
 				stmt.close();

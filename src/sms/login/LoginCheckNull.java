@@ -1,12 +1,12 @@
 package sms.login;
 
+import com.mysql.jdbc.Connection;
 import sms.utils.GUITool;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 /**
